@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Quote | Rolso</title>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+
+        <link rel="stylesheet" href="css/quote.min.css" />
+    </head>
+    <body>
+        <header class="header" data-page="quote">
+            <div class="header_panel">
+                <div class="container d-flex justify-content-center justify-content-md-between align-items-center">
+                    <span class="header_panel-logo">
+                        <a class="logo d-inline-flex align-items-center" href="index.html">
+                            <span class="logo_media">
+                                <svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Combined Shape</title>
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g fill="currentColor" transform="translate(0.000000, -0.000000)">
+                                            <g transform="translate(0.000000, 0.000000)">
+                                                <path
+                                                    d="M37.9730366,0 L56,18.5 L37.9730366,37 L20.0419919,18.5 L25.8616371,12.5121359 L23.0545408,9.458807 L14.4823984,18.5 L30.1911192,35 L28,37 L23.0545408,32 L18.195333,37 L0,18.5 L18.195333,0 L36.0014273,18.5 L30.1911192,24.6483396 L32.9085797,27.4399418 L41.6203395,18.5 L25.8616371,2.43040321 L28,0 L32.9085797,5.20234095 L37.9730366,0 Z M17.9818927,4.43392989 L4.64144645,18.5147247 L17.9818927,32.5955195 L21.0810871,29.6079919 L10.1321127,18.5 L21.0810871,7.28442361 L17.9818927,4.43392989 Z M37.7101843,4.43392989 L35.2883953,7.44356982 L46.1323481,18.5 L35.2883953,29.7451953 L37.7101843,32 L51.3914285,18.5147247 L37.7101843,4.43392989 Z M28,14.5941371 L24.4227574,18.5 L28,22.3996382 L31.7636086,18.5147247 L28,14.5941371 Z"
+                                                ></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="logo_text">Rolso</span>
+                        </a>
+                    </span>
+                    <div class="header_panel-links">
+                        <a class="header_panel-links_link btn btn--regular" href="calculator.html"> Calculator </a>
+                        <a class="header_panel-links_link btn btn--regular bordered" href="#"> Tracking </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="header_nav">
+                <div class="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between flex-lg-row-reverse">
+                    <a class="header_nav-tel h5" href="tel:+1234567890">+8 (495) 989 20 11</a>
+                    <a
+                        class="header_nav-trigger"
+                        href="#"
+                        id="headerTrigger"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#headerMenu"
+                        aria-controls="headerMenu"
+                    >
+                        <svg
+                            width="100%"
+                            height="100%"
+                            enable-background="new 0 0 32 32"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="m29.5625 5.3092h-27.125c-1.06854 0-1.9375.86896-1.9375 1.9375s.86896 1.9375 1.9375 1.9375h27.125c1.06812 0 1.9375-.86896 1.9375-1.9375s-.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="m29.5625 14.0625h-27.125c-1.06854 0-1.9375.86896-1.9375 1.9375s.86896 1.9375 1.9375 1.9375h27.125c1.06812 0 1.9375-.86896 1.9375-1.9375s-.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="m29.562 22.816h-27.125c-1.0685 0-1.9375 0.8689-1.9375 1.9375 0 1.0685 0.86896 1.9375 1.9375 1.9375h27.125c1.0681 0 1.9375-0.86896 1.9375-1.9375 0-1.0686-0.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                    <div class="header_nav-wrapper collapse" id="headerMenu">
+                        <ul class="header_nav-menu d-flex flex-column flex-lg-row">
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="index.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#homeMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="homeMenu"
+                                    data-page="home"
+                                >
+                                    Home
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="homeMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="home" href="index.html" data-main="true"> Home </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="home2" href="index2.html"> Home 2 </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="home3" href="index3.html"> Home 3 </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="about.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#aboutMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="aboutMenu"
+                                    data-page="about"
+                                >
+                                    About
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="aboutMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="about" href="about.html" data-main="true">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="quote" href="quote.html"> Quote </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="warehouse" href="warehouse.html"> Warehouse </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="faq" href="faq.html"> FAQs </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="prices" href="prices.html"> Prices </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" href="404.html"> 404 </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="services.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#servicesMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="servicesMenu"
+                                    data-page="services"
+                                >
+                                    Services
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="servicesMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="services" href="services.html" data-main="true">
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="service" href="service.html"> Single service </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="projects" href="projects.html"> Projects </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="calculator" href="calculator.html"> Calculator </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="blog.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#blogMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="blogMenu"
+                                    data-page="blog"
+                                >
+                                    Blog
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="blogMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="blog" href="blog.html" data-main="true"> Blog </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="post" href="post.html"> Single post </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item">
+                                <a class="nav-item nav-link" href="contacts.html" data-page="contacts">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <header class="page">
+            <div class="page_overlay"></div>
+
+            <div class="container">
+                <div class="page_card d-flex flex-column">
+                    <h1 class="page_card-title">Quote</h1>
+                    <ul class="page_card-breadcrumbs breadcrumbs">
+                        <li class="page_card-breadcrumbs_item item">
+                            <a class="link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="page_card-breadcrumbs_item item">
+                            <a class="link" href="about.html">About</a>
+                        </li>
+
+                        <li class="page_card-breadcrumbs_item item">
+                            <span class="current">Quote</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- quote content start -->
+        <main class="quote section">
+            <div class="container">
+                <!-- quote form section start -->
+                <h3 class="quote_header">Get Free Consultation</h3>
+                <form class="quote_form form" action="#" method="post" data-type="order">
+                    <div class="quote_form-row">
+                        <div class="column">
+                            <label class="label" for="quoteName">Full Name</label>
+                            <input class="field required" id="quoteName" type="text" placeholder="Name" />
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteEmail">Email</label>
+                            <input class="field required" id="quoteEmail" type="text" placeholder="Email" data-type="email" />
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteTel">Phone</label>
+                            <input class="field required" id="quoteTel" type="text" placeholder="Phone" />
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteSubject">Subject</label>
+                            <input class="field required" id="quoteSubject" type="text" placeholder="Subject" />
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteDelivery">Delivery City</label>
+                            <input class="field required" id="quoteDelivery" type="text" placeholder="City" />
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteDeparture">City of Departure</label>
+                            <input class="field required" id="quoteDeparture" type="text" placeholder="City" />
+                        </div>
+                    </div>
+                    <div class="quote_form-row">
+                        <div class="column">
+                            <label class="label" for="quoteFreight">Freight Type</label>
+                            <select id="quoteFreight">
+                                <option value="truckload01">Value 1</option>
+                                <option value="truckload02">Value 2</option>
+                                <option value="truckload03">Value 3</option>
+                                <option value="truckload04">Value 4</option>
+                                <option value="truckload05">Value 5</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteIncoterms">Incoterms</label>
+                            <select id="quoteIncoterms">
+                                <option value="truckload01">Value 1</option>
+                                <option value="truckload02">Value 2</option>
+                                <option value="truckload03">Value 3</option>
+                                <option value="truckload04">Value 4</option>
+                                <option value="truckload05">Value 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quote_form-row">
+                        <div class="column">
+                            <label class="label" for="quoteWeight">Weight</label>
+                            <input class="field" id="quoteWeight" type="number" placeholder="0" />
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteHeight">Height</label>
+                            <input class="field" id="quoteHeight" type="number" placeholder="0" />
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteWidth">Width</label>
+                            <input class="field" id="quoteWidth" type="number" placeholder="0" />
+                        </div>
+                        <div class="column">
+                            <label class="label" for="quoteLength">Length</label>
+                            <input class="field" id="quoteLength" type="number" placeholder="0" />
+                        </div>
+                    </div>
+                    <div class="quote_form-row">
+                        <div class="column">
+                            <input type="checkbox" id="isFragile" />
+                            <label for="isFragile">
+                                <i class="icon-square-regular icon"></i>
+                                <i class="icon-check-square-regular icon"></i>
+                                Fragile
+                            </label>
+                        </div>
+                        <div class="column">
+                            <input type="checkbox" id="isExpress" />
+                            <label for="isExpress">
+                                <i class="icon-square-regular icon"></i>
+                                <i class="icon-check-square-regular icon"></i>
+                                Express delivery
+                            </label>
+                        </div>
+                        <div class="column">
+                            <input type="checkbox" id="isInsurance" checked />
+                            <label for="isInsurance">
+                                <i class="icon-square-regular icon"></i>
+                                <i class="icon-check-square-regular icon"></i>
+                                Insurance
+                            </label>
+                        </div>
+                        <div class="column">
+                            <input type="checkbox" id="isPackaging" />
+                            <label for="isPackaging">
+                                <i class="icon-square-regular icon"></i>
+                                <i class="icon-check-square-regular icon"></i>
+                                Packaging
+                            </label>
+                        </div>
+                    </div>
+                    <button class="quote_form-btn btn btn--regular">Appointment</button>
+                </form>
+                <!-- quote form section end -->
+                <!-- banners section start -->
+                <div class="quote_banners d-grid">
+                    <div class="quote_banners-banner" data-aos="fade-up">
+                        <div class="bg">
+                            <picture>
+                                <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                            </picture>
+                            <span class="bg_overlay"></span>
+                        </div>
+                        <div class="content">
+                            <h4 class="quote_banners-banner_title">Quality services</h4>
+                            <a class="quote_banners-banner_btn btn btn--split" href="services.html">
+                                <span class="main">Services</span>
+                                <span class="icon-caret_right icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="quote_banners-banner" data-aos="fade-up" data-aos-delay="50">
+                        <div class="bg">
+                            <picture>
+                                <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                            </picture>
+                            <span class="bg_overlay bg_overlay--blue"></span>
+                        </div>
+                        <div class="content">
+                            <h4 class="quote_banners-banner_title">Rolso transportation company</h4>
+                            <p class="quote_banners-banner_text">
+                                Nullam dui augue, bibendum in maximus vel, blandit placerat ipsum. Praesent
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- banners section end -->
+            </div>
+        </main>
+        <!-- quote content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_main d-md-flex flex-wrap justify-content-between">
+                    <div class="footer_main-block footer_main-block--about">
+                        <span class="brand">
+                            <a class="logo d-inline-flex align-items-center" href="index.html">
+                                <span class="logo_media">
+                                    <svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Combined Shape</title>
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g fill="currentColor" transform="translate(0.000000, -0.000000)">
+                                                <g transform="translate(0.000000, 0.000000)">
+                                                    <path
+                                                        d="M37.9730366,0 L56,18.5 L37.9730366,37 L20.0419919,18.5 L25.8616371,12.5121359 L23.0545408,9.458807 L14.4823984,18.5 L30.1911192,35 L28,37 L23.0545408,32 L18.195333,37 L0,18.5 L18.195333,0 L36.0014273,18.5 L30.1911192,24.6483396 L32.9085797,27.4399418 L41.6203395,18.5 L25.8616371,2.43040321 L28,0 L32.9085797,5.20234095 L37.9730366,0 Z M17.9818927,4.43392989 L4.64144645,18.5147247 L17.9818927,32.5955195 L21.0810871,29.6079919 L10.1321127,18.5 L21.0810871,7.28442361 L17.9818927,4.43392989 Z M37.7101843,4.43392989 L35.2883953,7.44356982 L46.1323481,18.5 L35.2883953,29.7451953 L37.7101843,32 L51.3914285,18.5147247 L37.7101843,4.43392989 Z M28,14.5941371 L24.4227574,18.5 L28,22.3996382 L31.7636086,18.5147247 L28,14.5941371 Z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="logo_text">Rolso</span>
+                            </a>
+                        </span>
+                        <p class="text">
+                            Nam laoreet est et dui scelerisque, vel rutrum diam fringilla. In nec convallis nisi. Duis vitae ornare massa,
+                            vitae iaculis tellus. Sed ultricies tempus metus ut posuere.
+                        </p>
+                    </div>
+                    <div class="footer_main-block footer_main-block--nav">
+                        <ul class="list d-flex flex-column">
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="about.html">About Company</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="calculator.html">Calculator</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="services.html">Services</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="prices.html">Prices</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="contacts.html">Our Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_main-block footer_main-block--subscribe">
+                        <h5 class="title">Subscribe</h5>
+                        <p class="text">Curabitur quis porttitor augue, et posuere ligula. Nunc sagittis vestibulum</p>
+                        <form class="form d-flex justify-content-between" action="#" method="post" data-type="subscription">
+                            <input class="field required flex-grow-1" type="text" data-type="email" placeholder="Enter Your Email" />
+                            <button class="btn" type="submit">
+                                <i class="icon-paper-plane icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <ul class="footer_info d-md-flex flex-wrap">
+                    <li class="footer_info-block">
+                        <div class="main">
+                            <span class="main_label">Phone</span>
+                            <a class="main_info link link--bold" href="tel:+1234567890">+8 (495) 989 20 11</a>
+                        </div>
+                    </li>
+                    <li class="footer_info-block footer_info-block--highlight">
+                        <div class="main">
+                            <span class="main_label">Location</span>
+                            <span class="main_info">4621 Hill Croft Farm Road</span>
+                        </div>
+                    </li>
+                    <li class="footer_info-block">
+                        <div class="main">
+                            <span class="main_label">Email</span>
+                            <a class="main_info link" href="mailto:example@domain.com">rolso.office@gmail.com</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="footer_copyrights">All rights reserved Copyrights <span id="currentYear"></span></p>
+            </div>
+        </footer>
+        <script src="js/common.min.js"></script>
+    </body>
+</html>

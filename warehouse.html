@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Warehouse | Rolso</title>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+
+        <link rel="stylesheet" href="css/warehouse.min.css" />
+    </head>
+    <body>
+        <header class="header" data-page="warehouse">
+            <div class="header_panel">
+                <div class="container d-flex justify-content-center justify-content-md-between align-items-center">
+                    <span class="header_panel-logo">
+                        <a class="logo d-inline-flex align-items-center" href="index.html">
+                            <span class="logo_media">
+                                <svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Combined Shape</title>
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g fill="currentColor" transform="translate(0.000000, -0.000000)">
+                                            <g transform="translate(0.000000, 0.000000)">
+                                                <path
+                                                    d="M37.9730366,0 L56,18.5 L37.9730366,37 L20.0419919,18.5 L25.8616371,12.5121359 L23.0545408,9.458807 L14.4823984,18.5 L30.1911192,35 L28,37 L23.0545408,32 L18.195333,37 L0,18.5 L18.195333,0 L36.0014273,18.5 L30.1911192,24.6483396 L32.9085797,27.4399418 L41.6203395,18.5 L25.8616371,2.43040321 L28,0 L32.9085797,5.20234095 L37.9730366,0 Z M17.9818927,4.43392989 L4.64144645,18.5147247 L17.9818927,32.5955195 L21.0810871,29.6079919 L10.1321127,18.5 L21.0810871,7.28442361 L17.9818927,4.43392989 Z M37.7101843,4.43392989 L35.2883953,7.44356982 L46.1323481,18.5 L35.2883953,29.7451953 L37.7101843,32 L51.3914285,18.5147247 L37.7101843,4.43392989 Z M28,14.5941371 L24.4227574,18.5 L28,22.3996382 L31.7636086,18.5147247 L28,14.5941371 Z"
+                                                ></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="logo_text">Rolso</span>
+                        </a>
+                    </span>
+                    <div class="header_panel-links">
+                        <a class="header_panel-links_link btn btn--regular" href="calculator.html"> Calculator </a>
+                        <a class="header_panel-links_link btn btn--regular bordered" href="#"> Tracking </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="header_nav">
+                <div class="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between flex-lg-row-reverse">
+                    <a class="header_nav-tel h5" href="tel:+1234567890">+8 (495) 989 20 11</a>
+                    <a
+                        class="header_nav-trigger"
+                        href="#"
+                        id="headerTrigger"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#headerMenu"
+                        aria-controls="headerMenu"
+                    >
+                        <svg
+                            width="100%"
+                            height="100%"
+                            enable-background="new 0 0 32 32"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="m29.5625 5.3092h-27.125c-1.06854 0-1.9375.86896-1.9375 1.9375s.86896 1.9375 1.9375 1.9375h27.125c1.06812 0 1.9375-.86896 1.9375-1.9375s-.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="m29.5625 14.0625h-27.125c-1.06854 0-1.9375.86896-1.9375 1.9375s.86896 1.9375 1.9375 1.9375h27.125c1.06812 0 1.9375-.86896 1.9375-1.9375s-.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="m29.562 22.816h-27.125c-1.0685 0-1.9375 0.8689-1.9375 1.9375 0 1.0685 0.86896 1.9375 1.9375 1.9375h27.125c1.0681 0 1.9375-0.86896 1.9375-1.9375 0-1.0686-0.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                    <div class="header_nav-wrapper collapse" id="headerMenu">
+                        <ul class="header_nav-menu d-flex flex-column flex-lg-row">
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="index.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#homeMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="homeMenu"
+                                    data-page="home"
+                                >
+                                    Home
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="homeMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="home" href="index.html" data-main="true"> Home </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="home2" href="index2.html"> Home 2 </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="home3" href="index3.html"> Home 3 </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="about.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#aboutMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="aboutMenu"
+                                    data-page="about"
+                                >
+                                    About
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="aboutMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="about" href="about.html" data-main="true">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="quote" href="quote.html"> Quote </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="warehouse" href="warehouse.html"> Warehouse </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="faq" href="faq.html"> FAQs </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="prices" href="prices.html"> Prices </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" href="404.html"> 404 </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="services.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#servicesMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="servicesMenu"
+                                    data-page="services"
+                                >
+                                    Services
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="servicesMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="services" href="services.html" data-main="true">
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="service" href="service.html"> Single service </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="projects" href="projects.html"> Projects </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="calculator" href="calculator.html"> Calculator </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="blog.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#blogMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="blogMenu"
+                                    data-page="blog"
+                                >
+                                    Blog
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="blogMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="blog" href="blog.html" data-main="true"> Blog </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="post" href="post.html"> Single post </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item">
+                                <a class="nav-item nav-link" href="contacts.html" data-page="contacts">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <header class="page">
+            <div class="page_overlay"></div>
+
+            <div class="container">
+                <div class="page_card d-flex flex-column">
+                    <h1 class="page_card-title">Warehouse</h1>
+                    <ul class="page_card-breadcrumbs breadcrumbs">
+                        <li class="page_card-breadcrumbs_item item">
+                            <a class="link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="page_card-breadcrumbs_item item">
+                            <a class="link" href="about.html">About</a>
+                        </li>
+
+                        <li class="page_card-breadcrumbs_item item">
+                            <span class="current">Warehouse</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- warehouse content start -->
+        <main class="content section">
+            <div class="container d-lg-flex flex-wrap justify-content-between align-items-start">
+                <article class="content_article">
+                    <h3 class="content_article-header">Inland Empire warehousing</h3>
+                    <p class="content_article-address">
+                        <i class="icon-map-signs-solid icon"></i>
+                        10359 Nobel Court, Jurupa Valley, CA
+                    </p>
+                    <div class="content_article-cover">
+                        <picture>
+                            <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                            <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                        </picture>
+                    </div>
+                    <p class="content_article-text">
+                        In hac habitasse platea dictumst. In rutrum tincidunt tincidunt. Maecenas finibus vitae est blandit tempus. Proin at
+                        dolor dignissim, sagittis leo eget, fermentum sem. Etiam a dapibus nisl. Mauris rhoncus vulputate ornare. Nullam
+                        venenatis cursus malesuada. Proin quis libero non lacus bibendum tempor et a ex.
+                    </p>
+                    <p class="content_article-text">
+                        Cras non ultricies sapien, eu viverra elit. Vivamus at rutrum ex, in blandit nibh. Nullam sit amet rutrum lorem.
+                        Pellentesque elementum, urna a ullamcorper fermentum, felis quam iaculis orci, eu iaculis libero ligula varius nibh.
+                        Ut vel est ut nulla maximus iaculis vel ac ligula.
+                    </p>
+                    <p class="content_article-text">
+                        Suspendisse potenti. Sed eget velit est. Aliquam ac est sed nisl blandit interdum non in dui. Fusce feugiat quam sit
+                        amet magna pretium, eu scelerisque felis ultrices. Curabitur posuere augue at tellus condimentum tempus. Praesent in
+                        blandit ex. Curabitur dignissim, ligula id tincidunt auctor, turpis massa dictum magna, sollicitudin sagittis est
+                        quam ac diam.
+                    </p>
+                    <ul class="content_article-gallery d-grid gallery">
+                        <li class="content_article-gallery_item">
+                            <a class="link" href="img/placeholder.jpg" data-caption="Image caption" data-role="gallery-link">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="content_article-gallery_item">
+                            <a class="link" href="img/placeholder.jpg" data-caption="Image caption" data-role="gallery-link">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="content_article-text">
+                        Morbi non metus vitae turpis condimentum suscipit. Morbi bibendum, ligula a commodo imperdiet, mauris justo pretium
+                        erat, at cursus risus nisi eget nisl. Mauris sit amet sem placerat, elementum enim non, faucibus lacus.
+                    </p>
+                    <p class="content_article-text">
+                        Nam auctor risus ut libero interdum molestie. Aliquam rutrum finibus sollicitudin. Nam vel maximus felis. Fusce
+                        iaculis pharetra mi, ac vehicula velit. In hac habitasse platea dictumst. Quisque egestas libero vel efficitur
+                        cursus. Quisque vulputate aliquam facilisis. Vestibulum placerat bibendum facilisis.
+                    </p>
+                    <ul class="content_article-list">
+                        <li class="content_article-list_item">
+                            <i class="icon-check-circle-o icon"></i>
+                            Maecenas pretium interdum mauris sed sollicitudin
+                        </li>
+                        <li class="content_article-list_item">
+                            <i class="icon-check-circle-o icon"></i>
+                            Sed interdum lacinia sem, sed euismod purus rhoncus a
+                        </li>
+                        <li class="content_article-list_item">
+                            <i class="icon-check-circle-o icon"></i>
+                            Donec cursus interdum purus, et fermentum
+                        </li>
+                    </ul>
+                    <p class="content_article-text">
+                        Suspendisse tristique et elit eget iaculis. Proin interdum placerat mauris, ac consectetur orci sagittis ac. Aliquam
+                        malesuada facilisis fringilla. Fusce finibus, sem nec congue gravida, libero nunc convallis purus, a faucibus leo
+                        ligula ut sapien. Duis imperdiet eleifend posuere.
+                    </p>
+                </article>
+                <div class="content_sidebar sidebar">
+                    <div class="sidebar_block-header">
+                        <h6 class="title">Building information</h6>
+                        <span class="icon">
+                            <i class="icon-file-o"></i>
+                        </span>
+                    </div>
+                    <div class="sidebar_block-content">
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="media">
+                                    <svg width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M24.6012 0.187689L47.5859 16.8447C48.0267 17.1696 48.1317 17.7909 47.8229 18.2461C47.6391 18.5088 47.3408 18.6656 47.0227 18.6664C46.8166 18.6664 46.6159 18.5995 46.4495 18.4764L42.2892 15.453V40.9489C42.2892 41.4995 41.8249 42 41.2814 42H6.72567C6.17215 42 5.71783 41.4995 5.71783 40.9489V15.4632L1.55755 18.4662C1.11558 18.7868 0.500684 18.6836 0.184165 18.2359C-0.132353 17.7882 -0.0308354 17.1653 0.411518 16.8447L23.4552 0.187689C23.7972 -0.0625629 24.2592 -0.0625629 24.6012 0.187689ZM15.2041 24.2822H32.7933V20.8788H15.2041V24.2822ZM15.2041 26.2842H32.7933V29.6876H15.2041V26.2842ZM32.7933 31.6896H15.2041V34.993H32.7933V31.6896ZM15.2041 36.995H32.7933V39.998H15.2041V36.995ZM34.7696 39.998H40.3033V14.0219L24.0284 2.23975L7.69414 14.0317V39.998H13.2278V19.8778C13.2294 19.3253 13.6709 18.8783 14.216 18.8768H33.7814C34.3265 18.8783 34.768 19.3253 34.7696 19.8778V39.998Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="main">
+                                    <span class="main_title">146, 900 sqft</span>
+                                    <span class="main_secondary">Size</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="media">
+                                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M34.948 19.382L35.0427 5.8369C35.0521 4.52387 33.9931 3.45158 32.6773 3.44219L30.6644 3.42475L30.6818 1.03876C30.6829 0.812096 30.5942 0.594151 30.4342 0.433207C30.2746 0.272263 30.0572 0.181397 29.8301 0.180391L24.5143 0.145855H24.5059C24.0355 0.141161 23.6505 0.517703 23.6458 0.987123L23.6286 3.37345L11.6121 3.28762L11.6295 0.901286C11.6309 0.42516 11.2462 0.0378889 10.7694 0.0342006L5.47074 0C4.99766 0 4.61126 0.377548 4.60185 0.84965L4.58472 3.23598H2.56337C1.93539 3.23464 1.33228 3.48175 0.886075 3.92267C0.433153 4.36225 0.178804 4.96613 0.18082 5.59649L5.43308e-05 31.708C-0.0029697 32.3403 0.244323 32.9479 0.688174 33.3992C1.13001 33.8502 1.73379 34.1064 2.36546 34.1114L19.044 34.2231C19.6286 35.8234 20.5529 37.2786 21.7534 38.4891C23.9502 40.7285 26.9563 41.9936 30.0969 42H30.1829C35.7739 41.9896 40.5954 38.077 41.7455 32.617C42.896 27.1569 40.0615 21.6382 34.948 19.382ZM30.2518 18.3862H30.1658C29.813 18.3862 29.4689 18.4033 29.1248 18.4291L26.9056 18.412L26.9402 13.3647L33.2623 13.4076L33.2277 18.4549L31.3784 18.4462C31.0084 18.412 30.6301 18.3862 30.2518 18.3862ZM9.84876 20.0171L9.81449 25.0643L16.6184 25.1073L16.6527 20.06L9.84876 20.0171ZM16.6097 26.824L16.5754 32.4805L9.77148 32.4376L9.80575 26.7811L16.6097 26.824ZM25.1853 18.412L25.2199 13.3647L18.416 13.3218L18.3817 18.3691L25.1853 18.412ZM16.6614 18.3433L9.8575 18.3003L9.89177 13.2531L16.6957 13.296L16.6614 18.3433ZM1.8151 18.249L8.1372 18.292L8.17147 13.2447L1.84938 13.2018L1.8151 18.249ZM8.12846 20.0087L8.09419 25.0556L1.7721 25.0127L1.80637 19.9658L8.12846 20.0087ZM24.007 20.1116L18.373 20.0771L18.3387 25.116L19.4824 25.1244C20.0768 23.8821 20.8832 22.7521 21.8653 21.7854C22.5138 21.149 23.2325 20.5874 24.007 20.1116ZM25.3661 1.86259L28.9441 1.88841L28.9098 7.15027L25.3314 7.12445L25.3661 1.86259ZM9.90924 1.75965L6.33089 1.73384L6.29662 6.9957L9.87463 7.02151L9.90924 1.75965ZM2.09902 5.14149C2.22401 5.02179 2.39033 4.95439 2.56337 4.95271H2.5721L4.58472 4.96982L4.56758 7.84535C4.56523 8.07369 4.65528 8.29364 4.81689 8.45492C4.97884 8.61654 5.19892 8.70606 5.42773 8.70371L10.7264 8.72953H10.7348C10.9609 8.73289 11.179 8.64571 11.3406 8.48778C11.5022 8.32985 11.5936 8.11392 11.5949 7.88827L11.6121 5.01273L23.6286 5.09857L23.6111 7.9741C23.6075 8.44956 23.9868 8.83951 24.4629 8.84991L29.7612 8.90121H29.77C30.2434 8.88981 30.6234 8.50689 30.6301 8.03446L30.6472 5.15021L32.6602 5.15892C32.8369 5.15926 33.0066 5.23034 33.1309 5.35608C33.2552 5.48182 33.3241 5.65181 33.3224 5.82818L33.2794 11.6996L1.85811 11.485L1.90112 5.61359C1.90011 5.43622 1.97168 5.26588 2.09902 5.14149ZM1.72909 31.7167C1.72909 31.8924 1.79696 32.0614 1.91825 32.1888C2.0419 32.3172 2.21326 32.3886 2.39134 32.3863L8.05118 32.4205L8.08546 26.764L1.76336 26.7211L1.72909 31.7167ZM18.287 32.4979L18.3212 26.8411H18.8202C18.5077 27.9037 18.3454 29.0044 18.3387 30.1116C18.3306 30.9126 18.4056 31.7123 18.5621 32.4979H18.287ZM30.1829 40.2833C32.8413 40.29 35.3935 39.2435 37.2791 37.3732C39.1889 35.4975 40.2722 32.9402 40.2896 30.2662C40.3239 25.0556 36.3672 20.7296 31.284 20.1716L29.2021 20.1545C23.8457 20.6716 19.8339 25.286 20.0768 30.6511C20.3201 36.0162 24.7324 40.2507 30.114 40.2833H30.1829Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M30.7265 31.3207L30.7524 26.9094C30.7571 26.4122 30.3763 26.005 29.9019 26C29.4275 25.9951 29.0393 26.3943 29.0346 26.8915L29 31.6717C28.9977 31.9112 29.0876 32.1415 29.2493 32.311L31.5338 34.7326C31.8659 35.0857 32.4081 35.0895 32.7449 34.7417C33.0818 34.3936 33.0854 33.8253 32.7533 33.4722L30.7265 31.3207Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="main">
+                                    <span class="main_title">5 am - 10pm</span>
+                                    <span class="main_secondary">Hours of opening</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="media">
+                                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.549 17.2306L19.4065 22.9815L16.4585 19.9752C16.1317 19.6417 15.5936 19.6341 15.2575 19.9581C14.921 20.2824 14.9134 20.8155 15.2402 21.149L18.7758 24.7468C19.1043 25.0744 19.6351 25.0856 19.9772 24.7719L26.7334 18.4551C26.8975 18.3017 26.9933 18.0899 26.9997 17.8666C27.006 17.6432 26.9225 17.4265 26.7674 17.2642C26.4386 16.9254 25.8964 16.9106 25.549 17.2306Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M8 20.9998C8 13.83 13.83 8 20.9998 8C28.17 8 34 13.83 34 20.9998C34 28.17 28.17 34 20.9998 34C13.83 34 8 28.17 8 20.9998ZM9.74029 20.9998C9.74029 27.204 14.7871 32.2597 20.9998 32.2597C27.2186 32.2597 32.2597 27.2183 32.2597 20.9998C32.2597 14.7814 27.2186 9.74029 20.9998 9.74029C14.7871 9.74029 9.74029 14.7956 9.74029 20.9998Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M39.2985 10.9977L39.0094 16.1881L41.8556 20.5207C42.0481 20.8127 42.0481 21.1916 41.8556 21.4835L38.992 25.8161L39.281 31.0065C39.2975 31.3543 39.109 31.6791 38.7994 31.8381L34.1755 34.175L31.8373 38.7965C31.681 39.1086 31.354 39.298 31.0054 39.2779L25.8122 38.9889L21.4774 41.851C21.1869 42.0497 20.8045 42.0497 20.5141 41.851L16.1792 38.9889L10.9861 39.2779C10.6382 39.2943 10.3128 39.1062 10.1541 38.7965L7.81598 34.175L3.19205 31.8381C2.87939 31.6821 2.69022 31.3549 2.7104 31.0065L2.99946 25.8161L0.144444 21.475C-0.0481481 21.1827 -0.0481481 20.8042 0.144444 20.5122L3.00801 16.1796L2.7193 10.9892C2.70288 10.6415 2.89102 10.3163 3.20095 10.1577L7.82453 7.82077L10.163 3.19927C10.319 2.88677 10.646 2.69736 10.995 2.71787L16.1878 3.00678L20.5226 0.144368C20.8151 -0.0481228 21.1938 -0.0481228 21.4859 0.144368L25.8208 3.00678L31.0228 2.72642C31.3704 2.71001 31.6957 2.89839 31.8548 3.20782L34.1929 7.82931L38.8168 10.1662C39.1292 10.3221 39.3187 10.6493 39.2985 10.9977ZM37.2405 25.6325C37.2241 25.4435 37.2737 25.2551 37.3804 25.0985L40.0866 21.0021L37.3804 16.9058C37.2826 16.7454 37.2337 16.5598 37.2405 16.3721L37.5118 11.4617L33.142 9.25607C32.9754 9.17265 32.8403 9.0376 32.7569 8.87109L30.5497 4.50328L25.6371 4.77476C25.4483 4.79117 25.2594 4.74159 25.1028 4.63458L21.0043 1.93013L16.9061 4.63458C16.7454 4.7327 16.5596 4.78125 16.3718 4.77476L11.4588 4.50328L9.25204 8.87109C9.16857 9.0376 9.03345 9.17265 8.86686 9.25607L4.49676 11.4617L4.76837 16.3721C4.78479 16.5608 4.73519 16.7496 4.62812 16.9058L1.92225 21.0021L4.62812 25.0985C4.72629 25.2588 4.77521 25.4445 4.76837 25.6325L4.49676 30.5426L8.87541 32.7397C9.04235 32.8231 9.17747 32.9581 9.26093 33.1246L11.4677 37.4924L16.3807 37.221H16.4245C16.5962 37.2217 16.7638 37.2736 16.9061 37.3697L21.0043 40.0745L25.1028 37.3697C25.2632 37.2716 25.4489 37.223 25.6371 37.2299L30.5497 37.501L32.7569 33.1335C32.8403 32.967 32.9754 32.8316 33.142 32.7482L37.5118 30.5426L37.2405 25.6325Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="main">
+                                    <span class="main_title">A-Trap compliant</span>
+                                    <span class="main_secondary">Security</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="media">
+                                    <svg width="41" height="45" viewBox="0 0 41 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M13.5 0C16.0599 0 18.1429 2.10296 18.1429 4.68747V33.8736C19.328 35.1003 20 36.741 20 38.4375C20 42.0557 17.0837 45 13.5 45C9.9163 45 7 42.0557 7 38.4375C7 36.741 7.67188 35.1003 8.85712 33.8736V4.68747C8.85712 2.10296 10.94 0 13.5 0ZM8.85712 38.4376C8.85712 41.0221 10.9401 43.125 13.5 43.125C16.0599 43.125 18.1429 41.0221 18.143 38.4375C18.143 37.11 17.5925 35.8777 16.5923 34.9685C16.3973 34.79 16.2858 34.5373 16.2858 34.2718V4.68747C16.2858 3.13655 15.0362 1.87497 13.5 1.87497C11.9639 1.87497 10.7143 3.13655 10.7143 4.68747V34.2719C10.7143 34.5374 10.6028 34.7901 10.4078 34.9686C9.40756 35.8777 8.85712 37.1101 8.85712 38.4376Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M14.3334 19.9584V36.4265C15.3012 36.8235 16 37.8773 16 39.125C16 40.7104 14.8786 42 13.5 42C12.1214 42 11 40.7104 11 39.125C11 37.8773 11.6988 36.8235 12.6666 36.4265V19.9584C12.6666 19.4286 13.0394 19 13.5 19C13.9606 19 14.3334 19.4286 14.3334 19.9584ZM12.6666 39.125C12.6666 39.6538 13.0402 40.0834 13.5 40.0834C13.9598 40.0834 14.3334 39.6538 14.3334 39.125C14.3334 38.5962 13.9598 38.1666 13.5 38.1666C13.0402 38.1666 12.6666 38.5963 12.6666 39.125Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M6.12498 30H0.875021C0.391368 30 0 30.4473 0 31C0 31.5527 0.391368 32 0.875021 32H6.12498C6.60863 32 7 31.5527 7 31C7 30.4473 6.60863 30 6.12498 30Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M5.99998 26H4.00002C3.44728 26 3 26.4473 3 27C3 27.5527 3.44728 28 4.00002 28H5.99998C6.55272 28 7 27.5527 7 27C7 26.4473 6.55272 26 5.99998 26Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M5.99998 23H4.00002C3.44728 23 3 23.4473 3 24C3 24.5527 3.44728 25 4.00002 25H5.99998C6.55272 25 7 24.5527 7 24C7 23.4473 6.55272 23 5.99998 23Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M0.875021 20H6.12498C6.60863 20 7 19.5527 7 19C7 18.4473 6.60863 18 6.12498 18H0.875021C0.391368 18 0 18.4473 0 19C0 19.5527 0.391368 20 0.875021 20Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M0.875021 10H6.12498C6.60863 10 7 9.55273 7 9C7 8.44727 6.60863 8 6.12498 8H0.875021C0.391368 8 0 8.44727 0 9C0 9.55273 0.391368 10 0.875021 10Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M5.99998 15H4.00002C3.44728 15 3 15.4473 3 16C3 16.5527 3.44728 17 4.00002 17H5.99998C6.55272 17 7 16.5527 7 16C7 15.4473 6.55272 15 5.99998 15Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M5.99998 11H4.00002C3.44728 11 3 11.4473 3 12C3 12.5527 3.44728 13 4.00002 13H5.99998C6.55272 13 7 12.5527 7 12C7 11.4473 6.55272 11 5.99998 11Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M26.9999 14.8889H28.9999C30.6542 14.8889 31.9999 16.1598 31.9999 17.7222C31.9999 18.2443 32.4472 18.6667 33 18.6667C33.5527 18.6667 34 18.2443 34 17.7222C34 15.1185 31.7568 13 29 13H27C24.2432 13 22 15.1185 22 17.7222V25.2778C22 27.8815 24.2432 30 27 30H28.9999C31.7567 30 33.9999 27.8815 33.9999 25.2778C33.9999 24.7557 33.5526 24.3333 32.9999 24.3333C32.4471 24.3333 31.9999 24.7557 31.9999 25.2778C31.9999 26.8402 30.6542 28.1111 28.9999 28.1111H26.9999C25.3456 28.1111 23.9999 26.8402 23.9999 25.2778V17.7222C23.9999 16.1598 25.3456 14.8889 26.9999 14.8889Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M36 15.5C36 14.1214 37.1214 13 38.5 13C39.8786 13 41 14.1215 41 15.5C41 16.8786 39.8786 18 38.5 18C37.1214 18 36 16.8786 36 15.5ZM37.6666 15.5C37.6666 15.9598 38.0402 16.3334 38.5 16.3334C38.9598 16.3334 39.3333 15.9598 39.3334 15.5C39.3334 15.0402 38.9598 14.6666 38.5 14.6666C38.0402 14.6666 37.6666 15.0402 37.6666 15.5Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="main">
+                                    <span class="main_title">Temperature range</span>
+                                    <span class="main_secondary">Ambient</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="services section">
+            <div class="container">
+                <h3 class="services_header">Our best services</h3>
+                <div class="services_list swiper">
+                    <div class="swiper-wrapper">
+                        <div class="services_list-item swiper-slide">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                                <span class="media_icon">
+                                    <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M35.2264 39.9905H39.9867C40.2558 39.9893 40.5141 40.0943 40.7045 40.2821C40.8948 40.4698 41.0012 40.7247 41 40.9901C40.9984 41.5475 40.5409 41.9984 39.9763 42H1.02372C0.458275 42 0 41.5479 0 40.9901C0 40.4327 0.458275 39.9803 1.02372 39.9803H5.79441L2.82563 30.2252C2.44893 28.9763 2.918 27.6296 3.99251 26.8726L7.50395 24.4185V13.411C7.51394 12.299 8.43409 11.4043 9.56178 11.4114H9.8585V8.19014C9.8585 7.06903 10.8206 6.16016 11.9467 6.16016H16.1032V2.0501C16.1136 0.926233 17.0317 0.0157791 18.171 0H29.0636C30.2069 0.0142012 31.1319 0.922288 31.1519 2.0501V11.4114H31.4486C31.9908 11.4063 32.5123 11.6146 32.8986 11.9897C33.2849 12.3649 33.5036 12.8761 33.5064 13.411V24.4185L37.0179 26.8824C38.0968 27.6367 38.5666 28.9866 38.1847 30.2351L35.2264 39.9905ZM33.0765 39.9905L36.2193 29.6497C36.3433 29.2323 36.1873 28.7834 35.8302 28.5286L21.5289 18.5207V39.9905H33.0765ZM18.1506 2.01972H29.1044V11.4114H21.1194V8.19014C21.1274 7.65799 20.9203 7.14477 20.5436 6.76371C20.1673 6.38304 19.6522 6.16568 19.1128 6.16016H18.1506V2.01972ZM19.072 8.17988H11.9059V11.4114H19.072V8.17988ZM9.55139 13.4312H31.459V22.9846L21.099 15.7436C20.7443 15.4911 20.2661 15.4911 19.9114 15.7436L9.55139 22.9846V13.4312ZM5.18018 28.5286C4.82308 28.7834 4.66712 29.2323 4.79109 29.6497L7.93383 39.9905H19.4815V18.5207L5.18018 28.5286Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="main">
+                                <a class="main_title h4" href="service.html" target="_blank" rel="noopener noreferrer">
+                                    Shipping Freight
+                                </a>
+                                <p class="main_text">Nullam dui augue, bibendum in maximus vel, blandit placerat ipsum. Praesent</p>
+                            </div>
+                        </div>
+                        <div class="services_list-item swiper-slide">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                                <span class="media_icon">
+                                    <svg width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M9 27C9 25.3432 10.5671 24 12.5 24C14.4325 24.0013 15.9984 25.3436 16 27C16 28.6568 14.4329 30 12.5 30C10.5671 30 9 28.6568 9 27ZM11.0114 27C11.0114 27.7045 11.6781 28.2759 12.5 28.2759C13.3215 28.2742 13.987 27.7041 13.9886 27C13.9886 26.2955 13.3223 25.7241 12.5 25.7241C11.6781 25.7241 11.0114 26.2955 11.0114 27Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M26 27C26 25.3432 27.5671 24 29.5 24C31.4325 24.0013 32.9984 25.3436 33 27C33 28.6568 31.4329 30 29.5 30C27.5671 30 26 28.6568 26 27ZM28.0114 27C28.0114 27.7045 28.6777 28.2759 29.5 28.2759C30.3215 28.2742 30.9866 27.7041 30.9886 27C30.9886 26.2955 30.3219 25.7241 29.5 25.7241C28.6777 25.7241 28.0114 26.2955 28.0114 27Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M4.81944 0H37.1805C39.8456 0.00150767 42.0037 2.15786 41.9999 4.81476V32.6238C42.0033 33.3882 41.7009 34.1225 41.1596 34.6641C40.6183 35.2057 39.883 35.5095 39.116 35.5088H38.9032V36.5219C38.9032 37.5833 38.0031 38.4035 36.9386 38.4035H36V42.08C36 43.1414 35.0806 44 34.0161 44H30.2033C29.1354 44.0023 28.2663 43.1444 28.258 42.08V38.4035H13.7419V42.08C13.7336 43.1444 12.8645 44.0023 11.7966 44H7.98387C6.90953 44 6.00001 43.1414 6.00001 42.08V38.4035H5.06137C3.99686 38.4035 3.09679 37.5833 3.09679 36.5219V35.5088H2.88396C2.11771 35.508 1.38321 35.2035 0.842254 34.6622C0.301302 34.1209 -0.00187262 33.3878 1.74888e-05 32.6238V4.81476C-0.00376275 2.15786 2.15437 0.00150767 4.81944 0ZM7.93549 42.0702H11.8064V38.4035H7.93549V42.0702ZM34.0645 42.0702H30.1935V38.4035H34.0645V42.0702ZM5.03227 36.4737H36.9291V33.2028C36.9291 33.0098 36.7741 32.9035 36.5904 32.9035H5.03227V36.4737ZM34.8387 20.3596H21.8709V10.0351H32.9516C33.4585 10.0362 33.9435 10.2401 34.2985 10.6012C34.6531 10.9623 34.8477 11.45 34.8387 11.9551V20.3596ZM7.16129 20.3596H19.9355V10.0351H9.04839C8.54146 10.0362 8.05645 10.2401 7.70149 10.6012C7.3469 10.9623 7.15222 11.45 7.16129 11.9551V20.3596ZM7.1613 22.2895H34.8387V30.9737H7.1613V22.2895ZM39.7908 33.2993C39.9692 33.1199 40.0679 32.8764 40.0645 32.6238V4.81476C40.0664 4.05075 39.7632 3.31764 39.2222 2.77638C38.6813 2.23513 37.9468 1.93058 37.1805 1.92982H4.81944C4.05319 1.93058 3.31869 2.23513 2.77773 2.77638C2.23678 3.31764 1.93361 4.05075 1.9355 4.81476V32.6238C1.93058 32.8767 2.02849 33.121 2.2073 33.3011C2.3861 33.4809 2.62993 33.5812 2.88396 33.5789H3.09679V32.8651C3.09679 31.7938 3.99686 30.9737 5.06137 30.9737H5.22581V11.9551C5.21485 10.9374 5.61291 9.95782 6.33116 9.23451C7.04902 8.5112 8.02773 8.10451 9.04839 8.10526H32.9516C33.9719 8.10639 34.9494 8.51346 35.6669 9.23639C36.3848 9.95932 36.7832 10.9382 36.7741 11.9551V30.9447C37.9354 31.0604 38.9032 32.0253 38.9032 33.2028V33.5789H39.116C39.3697 33.5797 39.6127 33.4791 39.7908 33.2993Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="main">
+                                <a class="main_title h4" href="service.html" target="_blank" rel="noopener noreferrer"> Road Freight </a>
+                                <p class="main_text">Nullam dui augue, bibendum in maximus vel, blandit placerat ipsum. Praesent</p>
+                            </div>
+                        </div>
+                        <div class="services_list-item swiper-slide">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                                <span class="media_icon">
+                                    <svg width="31" height="44" viewBox="0 0 31 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M16.854 0.247575L28.5808 4.73709C30.0388 5.30224 30.9996 6.70296 31 8.2643V28.3533C30.9993 29.3484 30.601 30.3026 29.893 31.0037C29.1854 31.7044 28.2268 32.0949 27.2294 32.0883H26.5679L30.9147 42.6703C31.1144 43.1573 30.8878 43.7144 30.4046 43.9247C30.2909 43.973 30.1691 43.9988 30.0454 43.9999C29.6649 44.0039 29.3205 43.7763 29.1762 43.4248L28.3069 41.3311H2.67966L1.81 43.4248C1.66678 43.7759 1.32054 44.0014 0.940715 43.9907C0.817427 43.9892 0.695247 43.9634 0.581557 43.9152C0.100587 43.7077 -0.126424 43.1547 0.0714266 42.6703L4.43706 32.0883H3.77559C2.77822 32.0967 1.81849 31.7066 1.11014 31.0051C0.402162 30.3037 0.00424595 29.3491 0.00535325 28.3533V8.2643C0.00572235 6.70296 0.966184 5.30224 2.42423 4.73709L14.1513 0.247575C15.0217 -0.0825251 15.9833 -0.0825251 16.854 0.247575ZM29.1101 8.2643C29.1097 7.48363 28.6295 6.78327 27.9005 6.5007L16.4476 2.11507V16.6299L29.1101 12.8386V8.2643ZM3.10489 6.5007L14.5577 2.11507V16.4884L1.89527 11.2636V8.27388C1.8949 7.49063 2.37476 6.78732 3.10489 6.5007ZM4.63565 36.6154L3.46368 39.4448H27.5413L26.3697 36.6154H4.63565ZM25.5853 34.7291H5.42004L6.47832 32.0883H24.5174L25.5853 34.7291ZM3.76636 30.202H27.2294C27.7259 30.2101 28.2046 30.0189 28.5582 29.6715C28.9119 29.3237 29.1108 28.8488 29.1101 28.3533V14.8096L15.7577 18.8087C15.6721 18.8356 15.5828 18.8485 15.4931 18.8463C15.3698 18.8448 15.2476 18.8194 15.1339 18.7708L1.88567 13.3005V28.3533C1.88641 28.8481 2.08574 29.3222 2.43899 29.6696C2.79261 30.0167 3.27026 30.2086 3.76636 30.202Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M3 23.5002C3 21.5672 4.56717 20 6.50019 20C8.43207 20.0027 9.99735 21.5679 10 23.5002C10 25.4332 8.43321 27 6.50019 27C4.56717 27 3 25.4332 3 23.5002ZM4.93908 23.5002C4.93908 24.3622 5.63783 25.0609 6.50019 25.0609C6.91414 25.0613 7.31142 24.8969 7.60418 24.6042C7.89693 24.3114 8.0613 23.9141 8.06092 23.5002C8.06092 22.6378 7.36217 21.9391 6.50019 21.9391C5.63783 21.9391 4.93908 22.6378 4.93908 23.5002Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M21 23.5002C21 21.5672 22.5671 20 24.5 20C26.4318 20.0027 27.9973 21.5679 28 23.5002C28 25.4332 26.4329 27 24.5 27C22.5671 27 21 25.4332 21 23.5002ZM22.939 23.5002C22.939 24.3622 23.6381 25.0609 24.5 25.0609C24.9139 25.0613 25.3112 24.8969 25.6039 24.6042C25.8967 24.3114 26.061 23.9141 26.061 23.5002C26.061 22.6378 25.3619 21.9391 24.5 21.9391C23.6381 21.9391 22.939 22.6378 22.939 23.5002Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M18.9888 21H12.0112C11.4527 21 11 21.4477 11 22C11 22.552 11.4527 23 12.0112 23H18.9888C19.5473 23 20 22.552 20 22C20 21.4477 19.5473 21 18.9888 21Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M18.9888 24H12.0112C11.4527 24 11 24.4477 11 25C11 25.552 11.4527 26 12.0112 26H18.9888C19.5473 26 20 25.552 20 25C20 24.4477 19.5473 24 18.9888 24Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="main">
+                                <a class="main_title h4" href="service.html" target="_blank" rel="noopener noreferrer"> Train Freight </a>
+                                <p class="main_text">Nullam dui augue, bibendum in maximus vel, blandit placerat ipsum. Praesent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </aside>
+        <!-- warehouse content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_main d-md-flex flex-wrap justify-content-between">
+                    <div class="footer_main-block footer_main-block--about">
+                        <span class="brand">
+                            <a class="logo d-inline-flex align-items-center" href="index.html">
+                                <span class="logo_media">
+                                    <svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Combined Shape</title>
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g fill="currentColor" transform="translate(0.000000, -0.000000)">
+                                                <g transform="translate(0.000000, 0.000000)">
+                                                    <path
+                                                        d="M37.9730366,0 L56,18.5 L37.9730366,37 L20.0419919,18.5 L25.8616371,12.5121359 L23.0545408,9.458807 L14.4823984,18.5 L30.1911192,35 L28,37 L23.0545408,32 L18.195333,37 L0,18.5 L18.195333,0 L36.0014273,18.5 L30.1911192,24.6483396 L32.9085797,27.4399418 L41.6203395,18.5 L25.8616371,2.43040321 L28,0 L32.9085797,5.20234095 L37.9730366,0 Z M17.9818927,4.43392989 L4.64144645,18.5147247 L17.9818927,32.5955195 L21.0810871,29.6079919 L10.1321127,18.5 L21.0810871,7.28442361 L17.9818927,4.43392989 Z M37.7101843,4.43392989 L35.2883953,7.44356982 L46.1323481,18.5 L35.2883953,29.7451953 L37.7101843,32 L51.3914285,18.5147247 L37.7101843,4.43392989 Z M28,14.5941371 L24.4227574,18.5 L28,22.3996382 L31.7636086,18.5147247 L28,14.5941371 Z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="logo_text">Rolso</span>
+                            </a>
+                        </span>
+                        <p class="text">
+                            Nam laoreet est et dui scelerisque, vel rutrum diam fringilla. In nec convallis nisi. Duis vitae ornare massa,
+                            vitae iaculis tellus. Sed ultricies tempus metus ut posuere.
+                        </p>
+                    </div>
+                    <div class="footer_main-block footer_main-block--nav">
+                        <ul class="list d-flex flex-column">
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="about.html">About Company</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="calculator.html">Calculator</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="services.html">Services</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="prices.html">Prices</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="contacts.html">Our Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_main-block footer_main-block--subscribe">
+                        <h5 class="title">Subscribe</h5>
+                        <p class="text">Curabitur quis porttitor augue, et posuere ligula. Nunc sagittis vestibulum</p>
+                        <form class="form d-flex justify-content-between" action="#" method="post" data-type="subscription">
+                            <input class="field required flex-grow-1" type="text" data-type="email" placeholder="Enter Your Email" />
+                            <button class="btn" type="submit">
+                                <i class="icon-paper-plane icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <ul class="footer_info d-md-flex flex-wrap">
+                    <li class="footer_info-block">
+                        <div class="main">
+                            <span class="main_label">Phone</span>
+                            <a class="main_info link link--bold" href="tel:+1234567890">+8 (495) 989 20 11</a>
+                        </div>
+                    </li>
+                    <li class="footer_info-block footer_info-block--highlight">
+                        <div class="main">
+                            <span class="main_label">Location</span>
+                            <span class="main_info">4621 Hill Croft Farm Road</span>
+                        </div>
+                    </li>
+                    <li class="footer_info-block">
+                        <div class="main">
+                            <span class="main_label">Email</span>
+                            <a class="main_info link" href="mailto:example@domain.com">rolso.office@gmail.com</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="footer_copyrights">All rights reserved Copyrights <span id="currentYear"></span></p>
+            </div>
+        </footer>
+        <script src="js/common.min.js"></script>
+        <script src="js/warehouse.min.js"></script>
+    </body>
+</html>
