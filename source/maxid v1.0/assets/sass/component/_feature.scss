@@ -1,0 +1,109 @@
+/*-------------------------------------------------------
+41. Feature css
+---------------------------------------------------------*/
+
+.feature-minus {
+	position: relative;
+	z-index: 4;
+	margin-top: -70px;
+}
+
+.feature-box {
+	padding: 6rem 5rem;
+	border-radius: 10px;
+	box-shadow: 0px 10px 32px #00000012;
+	background: var(--clr-white);
+	transition: all .5s ease;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	&::before {
+		@include pos-abs(var(--clr-gradient),100%,100%,1);
+		top: 0;
+		left: 0;
+		scale: 0;
+		transition: all .5s ease;
+		border-radius: 50%;
+	}
+	&:hover {
+		&::before {
+			scale: 1;
+			border-radius: 0;
+		}
+		.feature-icon {
+			i {
+				font-size: 6rem;
+				color: var(--clr-white);
+				display: inline-block;
+			}
+		}
+		.feature-desc {
+			h4 {
+				color: var(--clr-white);
+			}
+			p {
+				color: var(--clr-white);
+			}
+			.feature-btn {
+				color: var(--clr-white);
+			}
+		}
+		.feature-shape {
+			bottom: 0;
+		}
+	}
+	.feature-icon {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 2rem;
+		&::before {
+			@include pos-abs(var(--clr-sec),55px,55px,.4);
+			top: 0;
+			left: 4rem;
+			border-radius: 0 20px 0 0;
+		}
+		i {
+			font-size: 6rem;
+			color: var(--clr-def);
+			display: inline-block;
+		}
+	}
+	.feature-desc {
+		h4 {
+			font-size: 30px;
+		}
+		p {
+			
+		}
+	}
+}
+
+.feature-shape {
+	position: absolute;
+	bottom: -100px;
+	left: 50%;
+	translate: -50% 0;
+	z-index: -1;
+	transition: all .5s ease;
+}
+
+.feature-icon-dot {
+	margin: -3rem 0 0 -40px;
+}
+
+.feature-btn {
+	color: var(--clr-def);
+	i {
+		height: 2rem;
+		width: 2rem;
+		line-height: 2rem;
+		text-align: center;
+		font-size: 1rem;
+		background-color: var(--clr-sec);
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		color: var(--clr-white);
+		display: inline-block;
+		margin-left: 7px;
+	}
+}

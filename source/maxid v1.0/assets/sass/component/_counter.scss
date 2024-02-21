@@ -1,0 +1,93 @@
+/*-------------------------------------------------------
+28. Counter Css  
+---------------------------------------------------------*/
+
+.center-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.counter-title {
+	h2 {
+	}
+	span {
+		.hero-line {
+			&::before {
+			}
+			&::after {
+			}
+		}
+	}
+}
+
+.counter-1 {
+	.fun-fact {
+		text-align: center;
+		height: 200px;
+		width: 200px;
+		background: var(--clr-def);
+		border-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: var(--clr-white);
+		.counter-icon {
+			margin-bottom: 2rem;
+		}
+		.counter {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 40px;
+			font-weight: 800;
+			line-height: 1;
+			margin-bottom: 1rem;
+		}
+		span {
+			font-weight: 800;
+			display: block;
+			font-size: 1.5rem;
+			line-height: 1;
+		}
+	}
+}
+
+.counter-counter {
+	justify-content: center;
+}
+
+.counter-1 {
+	.fun-fact-clr-1 {
+		background: #EAFEF2;
+		color: #9FD167;
+		height: 300px;
+		width: 300px;
+		.counter {
+			font-size: 70px;
+		}
+		span {
+			font-size: 2.5rem;
+		}
+	}
+
+	.fun-fact-clr-2 {
+		background: #EBFAFF;
+		color: #70BBCF;
+	}
+
+	.fun-fact-clr-3 {
+		background: #FFF6ED;
+		color: #FDC42F;
+	}
+}
+
+
+//bg->#EAFEF2 txt->#9FD167
+
+//bg->#EBFAFF txt->#70BBCF
+
+//bg->#FFF6ED txt->#FDC42F

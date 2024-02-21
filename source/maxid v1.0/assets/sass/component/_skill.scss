@@ -1,0 +1,61 @@
+/*-------------------------------------------------------
+44. Skill CSS 
+---------------------------------------------------------*/
+
+.skill-area {
+	background: var(--clr-black);
+}
+
+.skill-left {
+	&::before {
+		@include pos-abs(linear-gradient(to left,black 0%,transparent 100%),100%,100%,1);
+		top: 0;
+		left: 0;
+	}
+}
+
+.skill-shape-1 {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+}
+
+.skill-shape-2 {
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	right: 0;
+}
+
+.skill-right {
+	width: 600px;
+	padding: 115px 0 115px 6rem;
+	.heading-1 {
+		color: var(--clr-white);
+		margin-bottom: 2rem;
+	}
+	p {
+		color: var(--clr-white);
+		margin-bottom: 3rem;
+	}
+}
+
+.skill-list {
+	column-count: 2;
+	li {
+		margin-bottom: 1.5rem;
+		color: var(--clr-white);
+		i {
+			height: 30px;
+			width: 30px;
+			line-height: 30px;
+			text-align: center;
+			display: inline-block;
+			background: var(--clr-def-2);
+			border-radius: 50%;
+			color: var(--clr-white);
+			margin-right: 1.5rem;
+		}
+	}
+} 

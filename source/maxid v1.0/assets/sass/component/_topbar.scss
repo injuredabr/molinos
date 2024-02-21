@@ -1,0 +1,90 @@
+/*-------------------------------------------------------
+27. Topbar css 
+---------------------------------------------------------*/
+
+.top-bar-area {
+	&::before {
+		position: absolute;
+		background: var(--clr-gradient-5);
+		content: '';
+		z-index: -1;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+}
+.topbar-before-off {
+	&::before {
+		display: none;
+	}
+}
+
+.top-box {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	color: var(--clr-heading);
+	i {
+		color: var(--clr-def);
+	}
+}
+
+.top-box.location {
+	i {
+		color: var(--clr-white);
+	}
+}
+
+.top-box-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav {
+	gap: 2rem;
+}
+
+.topbar-white {
+	.top-box {
+		color: var(--clr-white);
+		i {
+			color: var(--clr-white);
+		}
+		a {
+			color: var(--clr-white);
+		}
+		.top-social {
+			li {
+				a {
+					i {
+						color: var(--clr-def-2);
+					}
+				}
+			}
+		}
+	}
+}
+
+.top-social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+	li {
+		a {
+			i {
+				display: inline-block;
+				height: 4rem;
+				width: 4rem;
+				line-height: 4rem;
+				text-align: center;
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				color: var(--clr-def);
+				transition: all .5s ease;
+				background-color: var(--clr-white);
+			}
+		}
+	}
+} 

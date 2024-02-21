@@ -1,0 +1,97 @@
+
+/*-------------------------------------------------------
+14. Project css 
+---------------------------------------------------------*/
+
+@media (min-width: 1600px) {
+	.sd-container-fluid {
+		max-width: 1825px;
+	}
+}
+
+//Project Masonry
+
+.project-page {
+	.project-card {
+		overflow: hidden;
+		.project-img {
+			position:relative;
+			z-index: 1;
+			img {
+				border-radius: var(--rad-1);
+			}
+			.port-overlay {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				transform: rotateX(90deg);
+				-webkit-transition: all .5s ease;
+				transition: all .5s ease;
+				display: flex;
+				align-items: self-end;
+				&::before {
+					@include pos-abs(var(--clr-sec),100%,100%,.8);
+					top: 0;
+					left: 0;
+				}
+				.port-links {
+					.popup-link {
+						position: absolute;
+						top: 3rem;
+						left: 3rem;
+						font-size: 2.2rem;
+						color: var(--clr-white);
+					}
+				}
+			}
+		}
+		&:hover {
+			.port-overlay {
+				transform: rotateX(0deg);
+			}
+		}
+	}
+}
+
+.port-content {
+	padding: 0 0 3rem 3rem;
+	h4 {
+		color: var(--clr-white);
+		margin-bottom: 5px;
+		&:hover {
+			color: var(--clr-def);
+		}
+	}
+	span {
+		color: var(--clr-white);
+		display: inline-block;
+		font-size: 1.5rem;
+	}
+}
+
+.filter-menu-style-1 {
+	button {
+		padding: 1.7rem 3rem 1.5rem 3rem;
+		margin-right: 1rem;
+		color: var(--clr-heading);
+		font-weight: 600;
+		border: none;
+		text-transform: capitalize;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		line-height: 1;
+		font-family: var(--font-2);
+		letter-spacing: 1px;
+		-webkit-transition: background-color .5s ease;
+		transition: background-color .5s ease;
+		&:hover,
+		&.active {
+			background-color: var(--clr-def);
+			color: var(--clr-white);
+		}
+	}
+} 
+

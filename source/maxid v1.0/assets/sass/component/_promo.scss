@@ -1,0 +1,68 @@
+/*-------------------------------------------------------
+43. Promo css
+---------------------------------------------------------*/
+
+.promo-white {
+	.hero-sub-title {
+		color: var(--clr-white);
+		margin-bottom: 2rem;
+	}
+	.heading-1 {
+		color: var(--clr-white);
+		margin-bottom: 3rem;
+	}
+	p {
+		color: var(--clr-white);
+		margin-bottom: 4rem;
+	}
+}
+
+.promo-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5rem;
+}
+
+.promo-left {
+    padding-right: 23rem;
+}
+
+.promo-opt-single {
+	padding: 3rem 8rem;
+	background: #4D0404;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	&.promo-opt-active {
+		background: var(--clr-def);
+	}
+	span {
+		display: block;
+		font-size: 50px;
+		color: var(--clr-white);
+	}
+	h4 {
+		text-transform: capitalize;
+		margin-bottom: 0;
+		color: var(--clr-white);
+		font-size: 22px;
+	}
+}
+
+//Video
+
+.promo-area  {
+	&.bg-overlay {
+		&::before {
+			z-index: 1;
+		}
+	}
+}
+
+.promo-opt,
+.promo-wpr {
+    position: relative;
+    z-index: 3;
+}
+

@@ -1,0 +1,251 @@
+
+/*-------------------------------------------------------
+08. Hero css 
+---------------------------------------------------------*/
+
+@mixin hero {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+
+@mixin para-clr ($clr-white-opc) {
+	color: rgba(255,255,255,$clr-white-opc);
+}
+
+.hero-single {
+	@include hero;
+	.hero-content {
+		.hero-sub-title {
+			margin-bottom: 2rem;
+			color: var(--clr-white);
+		}
+		h2 {
+			margin-bottom: 2rem;
+			color: var(--clr-white);
+		}
+		p {
+			line-height: 3.2rem;
+			margin-bottom: 3rem;
+			font-size: 2rem;
+			padding: 0 5rem 0 0;
+			color: var(--clr-white);
+		}
+		.para {
+			line-height: 3.2rem; 
+			padding-right: 31%;
+			margin-bottom: 6rem;
+			padding-left: 0;
+		}
+	}
+}
+
+.left-hdr-pic {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+	img {
+		height: 90%;
+	}
+}
+
+.hero-hdr-1 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-hdr-2 {
+    position: absolute;
+    z-index: -1;
+    left: -340px;
+    top: 0;
+    width: 625px;
+}
+
+//Home 1 Shapes
+
+.hero-shape-3 {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	right: 25%;
+}
+
+.hero-shape-4 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 25%;
+}
+
+.hdr-shape {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	height: 100%;
+}
+
+//Home 2
+
+.hero-2-before {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(var(--clr-gradient-5),100%,100%,1);
+		top: 0;
+		left: 0;
+	}
+}
+
+.hero-single-2 {
+	@include hero;
+	overflow: hidden;
+	.hero-content {
+		.hero-sub-title {
+			color: var(--clr-white);
+			margin-bottom: 2rem;
+			font-size: 15px;
+		}
+		.hero-title {
+			margin-bottom: 4rem;
+			color: var(--clr-white);
+			font-size: 50px;
+			line-height: 65px;
+		}
+		p {
+			padding-right: 15%;
+			color: var(--clr-white);
+		}
+	}
+}
+
+.nm {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+//Swiper Carousel 
+
+@keyframes grow{
+	0%, 20%{
+		transform: scale(1);
+	}
+	75%, 100%{
+		transform: scale(1.15);
+	}
+}
+ 
+.swiper-slide{
+	&.swiper-slide-active {
+		.hero-bg-animate {
+			scale: 1.15;
+			animation: grow 4s linear forwards; 
+		}
+	}
+}
+
+.animate-pos {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+	-webkit-transition: 10s ease-out;
+    transition: 10s ease-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+	z-index: -5;
+}
+
+.hero-sldr {
+	.swiper-button-next, 
+	.swiper-button-prev {
+		color: var(--clr-white);
+		height: 7rem;
+		width: 7rem;
+		line-height: 7rem;
+		text-align: center;
+		background: rgba(0,46,90,.7); 
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		font-size: 2rem;
+	}
+
+	.swiper-button-next:after,
+	.swiper-button-prev:after {
+		font-size: 3rem;
+	}
+	.hero-single-2 {
+		.hero-content {
+			h2 {
+				opacity: 0;
+				visibility: hidden;
+				transition: all 500ms ease;
+				transform: translateY(-20px);
+			}
+			p {
+				opacity: 0;
+				visibility: hidden;
+				transition: all 500ms ease;
+				transform: translateX(-50px);
+			}
+			.hero-btn {
+				transform: scaleY(0);
+				transition: all 500ms ease;
+				transition-delay: 2000ms;
+				transform-origin: bottom;
+			}
+		}
+		.hdr-pic {
+			opacity: 0;
+			visibility: hidden;
+			transition: all 500ms ease;
+			transform: translateY(50px);
+		}
+	}
+}
+
+
+.hero-sldr {
+	.swiper-slide-active {
+		&.hero-single-2 {
+			.hero-content {
+				h2 {
+					opacity: 1;
+					visibility: visible;
+					transition-delay: 800ms;
+					transform: translateY(0px);
+				}
+				p {
+					opacity: 1;
+					visibility: visible;
+					transition-delay: 1600ms;
+					transform: translateX(0px);
+				}
+				.hero-btn {
+    				transform: scale(1);
+				}
+			}
+			.hdr-pic {
+				opacity: 1;
+				visibility: visible;
+				transition-delay: 1200ms;
+				transform: translateY(0px);
+			}
+		}
+	}
+}
+
+
+
