@@ -4,45 +4,31 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Warehouse | Rolso</title>
+        <title>Instalaciones</title>
         <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
         <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
         <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
 
         <link rel="stylesheet" href="css/warehouse.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="https://raw.githubusercontent.com/injuredabr/molinos/main/img/logoico.png" type="image/png">
     </head>
     <body>
         <header class="header" data-page="warehouse">
             <div class="header_panel">
                 <div class="container d-flex justify-content-center justify-content-md-between align-items-center">
-                    <span class="header_panel-logo">
-                        <a class="logo d-inline-flex align-items-center" href="index.html">
-                            <span class="logo_media">
-                                <svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Combined Shape</title>
-                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g fill="currentColor" transform="translate(0.000000, -0.000000)">
-                                            <g transform="translate(0.000000, 0.000000)">
-                                                <path
-                                                    d="M37.9730366,0 L56,18.5 L37.9730366,37 L20.0419919,18.5 L25.8616371,12.5121359 L23.0545408,9.458807 L14.4823984,18.5 L30.1911192,35 L28,37 L23.0545408,32 L18.195333,37 L0,18.5 L18.195333,0 L36.0014273,18.5 L30.1911192,24.6483396 L32.9085797,27.4399418 L41.6203395,18.5 L25.8616371,2.43040321 L28,0 L32.9085797,5.20234095 L37.9730366,0 Z M17.9818927,4.43392989 L4.64144645,18.5147247 L17.9818927,32.5955195 L21.0810871,29.6079919 L10.1321127,18.5 L21.0810871,7.28442361 L17.9818927,4.43392989 Z M37.7101843,4.43392989 L35.2883953,7.44356982 L46.1323481,18.5 L35.2883953,29.7451953 L37.7101843,32 L51.3914285,18.5147247 L37.7101843,4.43392989 Z M28,14.5941371 L24.4227574,18.5 L28,22.3996382 L31.7636086,18.5147247 L28,14.5941371 Z"
-                                                ></path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </span>
-                            <span class="logo_text">Rolso</span>
-                        </a>
-                    </span>
-                    <div class="header_panel-links">
-                        <a class="header_panel-links_link btn btn--regular" href="calculator.html"> Calculator </a>
-                        <a class="header_panel-links_link btn btn--regular bordered" href="#"> Tracking </a>
-                    </div>
+                    <ul class="header_panel-socials d-flex">
+                        <li class="header_panel-socials_item">
+                            <a class="link" href="https://maps.app.goo.gl/2BRLYmf5nEFYX2pc9" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <nav class="header_nav">
                 <div class="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between flex-lg-row-reverse">
-                    <a class="header_nav-tel h5" href="tel:+1234567890">+8 (495) 989 20 11</a>
+                    <a class="header_nav-tel h5" href="tel:+527757543652">+52 (775) 754 36 52</a>
                     <a
                         class="header_nav-trigger"
                         href="#"
@@ -85,19 +71,13 @@
                                     aria-controls="homeMenu"
                                     data-page="home"
                                 >
-                                    Home
+                                     Inicio
                                     <i class="icon-caret-down-solid icon"></i>
                                 </a>
                                 <div class="dropdown-menu collapse" id="homeMenu">
                                     <ul class="dropdown-list">
                                         <li class="list-item" data-main="true">
-                                            <a class="dropdown-item nav-item" data-page="home" href="index.html" data-main="true"> Home </a>
-                                        </li>
-                                        <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="home2" href="index2.html"> Home 2 </a>
-                                        </li>
-                                        <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="home3" href="index3.html"> Home 3 </a>
+                                            <a class="dropdown-item nav-item" data-page="home" href="index.html" data-main="true"> Inicio </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -113,30 +93,21 @@
                                     aria-controls="aboutMenu"
                                     data-page="about"
                                 >
-                                    About
+                                    Sobre Nosotros
                                     <i class="icon-caret-down-solid icon"></i>
                                 </a>
                                 <div class="dropdown-menu collapse" id="aboutMenu">
                                     <ul class="dropdown-list">
                                         <li class="list-item" data-main="true">
                                             <a class="dropdown-item nav-item" data-page="about" href="about.html" data-main="true">
-                                                About
+                                                Sobre Nosotros
                                             </a>
                                         </li>
                                         <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="quote" href="quote.html"> Quote </a>
-                                        </li>
-                                        <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="warehouse" href="warehouse.html"> Warehouse </a>
+                                            <a class="dropdown-item nav-item" data-page="warehouse" href="warehouse.html"> Instalaciones </a>
                                         </li>
                                         <li class="list-item">
                                             <a class="dropdown-item nav-item" data-page="faq" href="faq.html"> FAQs </a>
-                                        </li>
-                                        <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="prices" href="prices.html"> Prices </a>
-                                        </li>
-                                        <li class="list-item">
-                                            <a class="dropdown-item nav-item" href="404.html"> 404 </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -152,55 +123,24 @@
                                     aria-controls="servicesMenu"
                                     data-page="services"
                                 >
-                                    Services
+                                    Servicios
                                     <i class="icon-caret-down-solid icon"></i>
                                 </a>
                                 <div class="dropdown-menu collapse" id="servicesMenu">
                                     <ul class="dropdown-list">
                                         <li class="list-item" data-main="true">
                                             <a class="dropdown-item nav-item" data-page="services" href="services.html" data-main="true">
-                                                Services
+                                                Servicios
                                             </a>
                                         </li>
                                         <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="service" href="service.html"> Single service </a>
-                                        </li>
-                                        <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="projects" href="projects.html"> Projects </a>
-                                        </li>
-                                        <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="calculator" href="calculator.html"> Calculator </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="header_nav-menu_item dropdown">
-                                <a
-                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
-                                    href="blog.html"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#blogMenu"
-                                    data-trigger="dropdown"
-                                    aria-expanded="false"
-                                    aria-controls="blogMenu"
-                                    data-page="blog"
-                                >
-                                    Blog
-                                    <i class="icon-caret-down-solid icon"></i>
-                                </a>
-                                <div class="dropdown-menu collapse" id="blogMenu">
-                                    <ul class="dropdown-list">
-                                        <li class="list-item" data-main="true">
-                                            <a class="dropdown-item nav-item" data-page="blog" href="blog.html" data-main="true"> Blog </a>
-                                        </li>
-                                        <li class="list-item">
-                                            <a class="dropdown-item nav-item" data-page="post" href="post.html"> Single post </a>
+                                            <a class="dropdown-item nav-item" data-page="service" href="service.html"> Productos </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="header_nav-menu_item">
-                                <a class="nav-item nav-link" href="contacts.html" data-page="contacts">Contacts</a>
+                                <a class="nav-item" href="contacts.html" data-page="contacts">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -213,18 +153,18 @@
 
             <div class="container">
                 <div class="page_card d-flex flex-column">
-                    <h1 class="page_card-title">Warehouse</h1>
+                    <h1 class="page_card-title">Instalaciones</h1>
                     <ul class="page_card-breadcrumbs breadcrumbs">
                         <li class="page_card-breadcrumbs_item item">
-                            <a class="link" href="index.html">Home</a>
+                            <a class="link" href="index.html">Inicio</a>
                         </li>
 
                         <li class="page_card-breadcrumbs_item item">
-                            <a class="link" href="about.html">About</a>
+                            <a class="link" href="about.html">Sobre Nosotros</a>
                         </li>
 
                         <li class="page_card-breadcrumbs_item item">
-                            <span class="current">Warehouse</span>
+                            <span class="current">Instalaciones</span>
                         </li>
                     </ul>
                 </div>
@@ -562,44 +502,24 @@
                         <span class="brand">
                             <a class="logo d-inline-flex align-items-center" href="index.html">
                                 <span class="logo_media">
-                                    <svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                        <title>Combined Shape</title>
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g fill="currentColor" transform="translate(0.000000, -0.000000)">
-                                                <g transform="translate(0.000000, 0.000000)">
-                                                    <path
-                                                        d="M37.9730366,0 L56,18.5 L37.9730366,37 L20.0419919,18.5 L25.8616371,12.5121359 L23.0545408,9.458807 L14.4823984,18.5 L30.1911192,35 L28,37 L23.0545408,32 L18.195333,37 L0,18.5 L18.195333,0 L36.0014273,18.5 L30.1911192,24.6483396 L32.9085797,27.4399418 L41.6203395,18.5 L25.8616371,2.43040321 L28,0 L32.9085797,5.20234095 L37.9730366,0 Z M17.9818927,4.43392989 L4.64144645,18.5147247 L17.9818927,32.5955195 L21.0810871,29.6079919 L10.1321127,18.5 L21.0810871,7.28442361 L17.9818927,4.43392989 Z M37.7101843,4.43392989 L35.2883953,7.44356982 L46.1323481,18.5 L35.2883953,29.7451953 L37.7101843,32 L51.3914285,18.5147247 L37.7101843,4.43392989 Z M28,14.5941371 L24.4227574,18.5 L28,22.3996382 L31.7636086,18.5147247 L28,14.5941371 Z"
-                                                    ></path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
+                                    <img src="https://raw.githubusercontent.com/injuredabr/molinos/main/img/logo.png" alt="Logo" style="width: 64px;"> 
                                 </span>
-                                <span class="logo_text">Rolso</span>
+                                <span class="logo_text">Molinos de Pet</span>
                             </a>
                         </span>
                         <p class="text">
-                            Nam laoreet est et dui scelerisque, vel rutrum diam fringilla. In nec convallis nisi. Duis vitae ornare massa,
-                            vitae iaculis tellus. Sed ultricies tempus metus ut posuere.
+                            Trabajando para la naturaleza.
                         </p>
                     </div>
                     <div class="footer_main-block footer_main-block--nav">
                         <ul class="list d-flex flex-column">
                             <li class="list-item">
                                 <i class="icon-caret_right icon"></i>
-                                <a class="link" href="about.html">About Company</a>
+                                <a class="link" href="about.html">Sobre la compañía</a>
                             </li>
                             <li class="list-item">
                                 <i class="icon-caret_right icon"></i>
-                                <a class="link" href="calculator.html">Calculator</a>
-                            </li>
-                            <li class="list-item">
-                                <i class="icon-caret_right icon"></i>
-                                <a class="link" href="services.html">Services</a>
-                            </li>
-                            <li class="list-item">
-                                <i class="icon-caret_right icon"></i>
-                                <a class="link" href="prices.html">Prices</a>
+                                <a class="link" href="services.html">Servicios</a>
                             </li>
                             <li class="list-item">
                                 <i class="icon-caret_right icon"></i>
@@ -607,16 +527,16 @@
                             </li>
                             <li class="list-item">
                                 <i class="icon-caret_right icon"></i>
-                                <a class="link" href="contacts.html">Our Contacts</a>
+                                <a class="link" href="contacts.html">Nuestro Contacto</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="footer_main-block footer_main-block--subscribe">
-                        <h5 class="title">Subscribe</h5>
-                        <p class="text">Curabitur quis porttitor augue, et posuere ligula. Nunc sagittis vestibulum</p>
+                        <h5 class="title">Suscríbete</h5>
+                        <p class="text">Al proporcionar tu correo electrónico, aceptas recibir propaganda, avisos, ofertas y actualizaciones sobre nuestros productos</p>
                         <form class="form d-flex justify-content-between" action="#" method="post" data-type="subscription">
-                            <input class="field required flex-grow-1" type="text" data-type="email" placeholder="Enter Your Email" />
+                            <input class="field required flex-grow-1" type="text" data-type="email" placeholder="Ingrese su correo" />
                             <button class="btn" type="submit">
                                 <i class="icon-paper-plane icon"></i>
                             </button>
@@ -627,28 +547,27 @@
                 <ul class="footer_info d-md-flex flex-wrap">
                     <li class="footer_info-block">
                         <div class="main">
-                            <span class="main_label">Phone</span>
-                            <a class="main_info link link--bold" href="tel:+1234567890">+8 (495) 989 20 11</a>
+                            <span class="main_label">Teléfono</span>
+                            <a class="main_info link link--bold" href="tel:+527757543652">+52 (775) 754 36 52</a>
                         </div>
                     </li>
                     <li class="footer_info-block footer_info-block--highlight">
                         <div class="main">
-                            <span class="main_label">Location</span>
-                            <span class="main_info">4621 Hill Croft Farm Road</span>
+                            <span class="main_label">Ubicación</span>
+                            <span class="main_info">Cerrada camino real, San Antonio Farias 104, 43709 Tulancingo, Hgo.</span>
                         </div>
                     </li>
                     <li class="footer_info-block">
                         <div class="main">
                             <span class="main_label">Email</span>
-                            <a class="main_info link" href="mailto:example@domain.com">rolso.office@gmail.com</a>
+                            <a class="main_info link" href="mailto:servicioalcliente@molinosdepet.com">servicioalcliente@molinosdepet.com</a>
                         </div>
                     </li>
                 </ul>
 
-                <p class="footer_copyrights">All rights reserved Copyrights <span id="currentYear"></span></p>
+                <p class="footer_copyrights">Todos los Derechos Reservados Copyrights <span id="currentYear"></span></p>
             </div>
         </footer>
         <script src="js/common.min.js"></script>
-        <script src="js/warehouse.min.js"></script>
     </body>
 </html>
